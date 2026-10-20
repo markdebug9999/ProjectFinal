@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark | BSIT Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <a href="#home" class="logo">Mark<span>.</span></a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#activities">Activities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+    <h1>Hello, I'm <span>Mark.</span></h1>
+    <h2>BSIT Student | Future IT Professional</h2>
+    <p>
+      Welcome to my personal portfolio. Here you can explore
+      my background, technical skills, and school activities
+      as an Information Technology student.
+    </p>
+    <a href="#activities" class="btn">Explore My Activities ↗</a>
+  </div>
+
+  <div class="profile">
+    <!-- INSERT YOUR PROFILE PHOTO HERE -->
+    <img src="profile.jpg"
+         alt="My profile photo"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+    <div class="photo-placeholder">YOUR PHOTO HERE</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <p class="eyebrow">GET TO KNOW ME</p>
+  <h2 class="section-title">About <span>Me</span></h2>
+
+  <div class="about-box">
+    <div>
+      <h3>Who am I?</h3>
+      <p>
+        I am a Bachelor of Science in Information Technology
+        student. I am learning programming, web development,
+        networking, and other technologies through my classes
+        and activities.
+      </p>
+      <p>
+        My goal is to improve my knowledge, develop useful
+        technical skills, and become a professional IT
+        practitioner in the future.
+      </p>
+    </div>
+
+    <div class="info-box">
+      <p><strong>Program:</strong> BS Information Technology</p>
+      <p><strong>Interest:</strong> Programming and technology</p>
+      <p><strong>Goal:</strong> Professional IT practitioner</p>
+      <p><strong>Location:</strong> Philippines</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section alternate">
+  <p class="eyebrow">WHAT I'M LEARNING</p>
+  <h2 class="section-title">My <span>Skills</span></h2>
+
+  <div class="grid">
+    <article class="card">
+      <div class="skill-icon">&lt;/&gt;</div>
+      <h3>HTML & CSS</h3>
+      <p>Creating and styling website layouts.</p>
+    </article>
+
+    <article class="card">
+      <div class="skill-icon">{ }</div>
+      <h3>JavaScript</h3>
+      <p>Adding interactions and functionality to websites.</p>
+    </article>
+
+    <article class="card">
+      <div class="skill-icon">C++</div>
+      <h3>Programming</h3>
+      <p>Practicing conditions, loops, functions, and OOP.</p>
+    </article>
+
+    <article class="card">
+      <div class="skill-icon">01</div>
+      <h3>Networking</h3>
+      <p>Learning IP addressing and basic network concepts.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" class="section">
+  <p class="eyebrow">MY SCHOOL OUTPUTS</p>
+  <h2 class="section-title">ITE 1 <span>Activities</span></h2>
+  <p class="section-description">
+    Here are my activities and outputs throughout the semester.
+    Select a category to view its activities.
+  </p>
+
+  <div class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="prelim">Prelim</button>
+    <button class="filter" data-filter="midterm">Midterm</button>
+    <button class="filter" data-filter="final">Final</button>
+  </div>
+
+  <div class="activity-grid">
+
+    <!-- PRELIM ACTIVITY 1 -->
+    <article class="activity-card" data-period="prelim">
+      <div class="activity-photo">
+        <!-- CHANGE THIS PHOTO PATH -->
+        <img src="act1.png"
+             alt="Prelim Activity 1"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <div class="photo-placeholder">INSERT PRELIM PHOTO 1</div>
+      </div>
+      <div class="activity-info">
+        <span class="tag">PRELIM</span>
+        <h3>Prelim Activity </h3>
+        <p>Different Formating text.</p>
+        <button class="view-btn" data-image="act1.png"
+          data-title="Prelim Activity "
+          data-description="This activity focuses on applying different text formatting styles to improve the appearance and readability of a document. It includes using bold, italic, underline, font styles, font sizes, text colors, and text alignment. Through this activity, I learned how to format text properly and create a more organized and presentable document. It helped me understand the importance of text formatting in making information clear and visually appealing..">
+          View Activity ↗
+        </button>
+      </div>
+    </article>
+
+    <!-- PRELIM ACTIVITY 2 -->
+    <article class="activity-card" data-period="prelim">
+      <div class="activity-photo">
+        <img src="act2.png" alt="Prelim Activity "
+          onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <div class="photo-placeholder">INSERT PRELIM PHOTO 2</div>
+      </div>
+      <div class="activity-info">
+        <span class="tag">PRELIM</span>
+        <h3>Prelim Activity 2</h3>
+        <p>Student Information Profile.</p>
+        <button class="view-btn" data-image="act2.png"
+          data-title="Prelim Activity "
+          data-description="This activity focuses on presenting my personal and academic information as an Information Technology student. It includes my educational background, interests, skills, and future career goals. Through this activity, I learned how to organize and present information clearly while developing my skills in creating a personal profile. It also serves as an introduction to my journey as a BSIT student..">
+          View Activity ↗
+        </button>
+      </div>
+    </article>  
+
+    <!-- MIDTERM ACTIVITY 1 -->
+    <article class="activity-card" data-period="midterm">
+      <div class="activity-photo">
+        <img src="midterm.png" alt="Midterm Activity "
+          onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <div class="photo-placeholder">INSERT MIDTERM PHOTO</div>
+      </div>
+      <div class="activity-info">
+        <span class="tag">MIDTERM</span>
+        <h3>Midterm Activity 1</h3>
+        <p>My Multimedia Project.</p>
+        <button class="view-btn" data-image="midterm.png"
+          data-title="Midterm Activity "
+          data-description="This activity focuses on creating a multimedia project by combining different elements such as text, images, audio, video, and other visual content. Through this activity, I learned how to use multimedia elements to present information in a creative and engaging way. It helped me improve my creativity, technical skills, and understanding of how multimedia can be used to communicate ideas effectively..">
+          View Activity ↗
+        </button>
+      </div>
+    </article>
+
+    <!-- FINAL ACTIVITY 1 -->
+    <article class="activity-card" data-period="final">
+      <div class="activity-photo">
+        <img src="final.png" alt="Final Activity "
+          onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <div class="photo-placeholder">INSERT FINAL PHOTO</div>
+      </div>
+      <div class="activity-info">
+        <span class="tag">FINAL</span>
+        <h3>Final Activity 1</h3>
+        <p>Message to my Teacher.</p>
+        <button class="view-btn" data-image="final.png"
+          data-title="Final Activity 1"
+          data-description="This activity focuses on creating a heartfelt message for my teacher to express my gratitude and appreciation for their guidance, patience, and support throughout the learning process. Through this activity, I learned how to use words to communicate my thoughts and feelings sincerely. It also gave me an opportunity to recognize the importance of teachers in helping students learn, grow, and achieve their goals..">
+          View Activity ↗
+        </button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ACTIVITY IMAGE POPUP -->
+<div class="modal" id="activityModal">
+  <div class="modal-content">
+    <button class="close-modal" id="closeModal">×</button>
+    <h2 id="modalTitle">Activity</h2>
+    <img id="modalImage" src="" alt="Activity screenshot">
+    <p id="modalDescription"></p>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="section alternate">
+  <p class="eyebrow">GET IN TOUCH</p>
+  <h2 class="section-title">Contact <span>Me</span></h2>
+  <div class="contact-box">
+    <h3>Thank you for visiting!</h3>
+    <p>You can find me through my school email or GitHub profile.</p>
+    <!-- REPLACE THESE PLACEHOLDERS -->
+    <p>Email: markbautista462@gmail.com</p>
+    <p>GitHub: markdebug9999</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Mark's Student Portfolio | BSIT</p>
+  <a href="#home">Back to top ↑</a>
+</footer>
+
+</body>
+</html>
